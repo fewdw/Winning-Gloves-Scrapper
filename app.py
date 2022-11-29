@@ -123,8 +123,6 @@ def get_velcro_gloves():
     )
 
 
-# https://store.winning-usa.com/inventory.html
-
 @app.route('/headgear/open')
 def get_open_headgear():
     return jsonify({"open headgear": "coming soon"})

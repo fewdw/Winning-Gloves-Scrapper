@@ -43,3 +43,13 @@ def get_glove_prices_velcro():
         price = int(re.search(r'\d+', str(prices[i])).group())
         list.append(price)
     return list
+
+def get_inventory_table():
+    url = "https://store.winning-usa.com/inventory.html"
+    result = requests.get(url).text
+    doc = BeautifulSoup(result, "html.parser")
+    list = []
+    rows = doc.findAll("td",{"style":"width: 20%; height: 18px; text-align: center;"})
+    #<td style="width: 20%; text-align: center; height: 18px;">Size</td>
+    for i in range(60):
+        list.append(rows[i])

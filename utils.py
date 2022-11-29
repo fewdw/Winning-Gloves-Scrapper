@@ -3,6 +3,7 @@ from flask import Flask, render_template, jsonify
 from bs4 import BeautifulSoup
 import re
 
+
 def get_gloves_list(form_code, url="https://store.winning-usa.com/pro-gloves.html"):
     result = requests.get(url).text
     doc = BeautifulSoup(result, "html.parser")
@@ -44,12 +45,16 @@ def get_glove_prices_velcro():
         list.append(price)
     return list
 
+
 def get_inventory_table():
     url = "https://store.winning-usa.com/inventory.html"
     result = requests.get(url).text
     doc = BeautifulSoup(result, "html.parser")
     list = []
-    rows = doc.findAll("td",{"style":"width: 20%; height: 18px; text-align: center;"})
-    #<td style="width: 20%; text-align: center; height: 18px;">Size</td>
+    rows = doc.findAll("td", {"style": "width: 20%; height: 18px; text-align: center;"})
     for i in range(60):
-        list.append(rows[i])
+        if(len(rows[i].text) < 2):
+            list.append("available")
+        else:
+            list.append(rows[i].text)
+    return list

@@ -6,18 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gloves</title>
     <link rel="stylesheet" type="text/css" href="static/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 <body>
 
-    <img src="/static/logo.gif">
-    <p>Api Links</p>
-    <ul>
-        <li><a href="/gloves/laces">Laces Gloves</a></li>
-        <li><a href="/gloves/velcro">Velcro Gloves</a></li>
-        <li><a href="/headgear/open">Headgear Open</a></li>
-        <li><a href="/headgear/bar">Headgear Bar</a></li>
-        <li><a href="/cup">Cup</a></li>
-    </ul>
+    <img src="/static/logo.gif"><br>
+    <a href="/api">Api (for devs)</a>
 
+    <form>
+        <p>Enter email and select what product you want to be notified about</p>
+        email:<input type="text">
+        <br>
+
+        <p>velcro gloves</p>
+        8oz<input name="8velcro" type="checkbox">
+        10oz<input name="10velcro" type="checkbox">
+        12oz<input name="12velcro" type="checkbox">
+        14oz<input name="14velcro" type="checkbox">
+        16oz<input name="16velcro" type="checkbox">
+        <br>
+
+        <p>lace gloves</p>
+        8oz<input name="8lace" type="checkbox">
+        10oz<input name="10lace" type="checkbox">
+        12oz<input name="12lace" type="checkbox">
+        14oz<input name="14lace" type="checkbox">
+        16oz<input name="16lace" type="checkbox">
+        18oz<input name="18lace" type="checkbox">
+        <br>
+
+        <p>Open headgear</p>
+        <select>
+            <option>White medium</option>
+            <option>White large</option>
+            <option>White 2L</option>
+            <option>White 3L</option>
+
+            <option>Blue medium</option>
+            <option>Blue large</option>
+            <option>Blue 2L</option>
+            <option>Blue 3L</option>
+
+            <option>Black medium</option>
+            <option>Black large</option>
+            <option>Black 2L</option>
+            <option>Black 3L</option>
+
+            <option>Red medium</option>
+            <option>Red large</option>
+            <option>Red 2L</option>
+            <option>Red 3L</option>
+        </select>
+        <br>
+
+        <p>Bar headgear</p>
+        <select>
+            <option>White medium</option>
+            <option>White large</option>
+            <option>White 2L</option>
+            <option>White 3L</option>
+
+            <option>Blue medium</option>
+            <option>Blue large</option>
+            <option>Blue 2L</option>
+            <option>Blue 3L</option>
+
+            <option>Black medium</option>
+            <option>Black large</option>
+            <option>Black 2L</option>
+            <option>Black 3L</option>
+
+            <option>Red medium</option>
+            <option>Red large</option>
+            <option>Red 2L</option>
+            <option>Red 3L</option>
+        </select>
+        <br>
+
+        <p>Cup headgear</p>
+        <select>
+            <option>White medium</option>
+            <option>White large</option>
+            <option>White 2L</option>
+            <option>White 3L</option>
+
+            <option>Blue medium</option>
+            <option>Blue large</option>
+            <option>Blue 2L</option>
+            <option>Blue 3L</option>
+
+            <option>Black medium</option>
+            <option>Black large</option>
+            <option>Black 2L</option>
+            <option>Black 3L</option>
+
+            <option>Red medium</option>
+            <option>Red large</option>
+            <option>Red 2L</option>
+            <option>Red 3L</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit">
+    </form>
+
+    <script src="/static/script.js"></script>
 </body>
 </html>

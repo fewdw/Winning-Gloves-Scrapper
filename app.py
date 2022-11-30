@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, request
 from utils import get_gloves_list, get_glove_prices_laces, get_glove_prices_velcro, get_inventory_table
 
 app = Flask(__name__)
@@ -243,11 +243,25 @@ def get_cup():
 def index():
     return render_template("index.html")
 
+
 @app.route('/api')
 def api():
     return render_template("api.html")
 
 
+@app.route('/subscribed', methods=['POST'])
+def display_form():
+
+    #email
+    email = request.form.get("email")
+
+    #gloves
+
+    #gear
+    open_choice = request.form.get("open")
+    bar_choice = request.form.get("bar")
+    cup_choice = request.form.get("cup")
+    return render_template("subscribed.html", EMAIL =email,OPEN=open_choice,BAR=bar_choice,CUP=cup_choice)
 
 
 if __name__ == '__main__':

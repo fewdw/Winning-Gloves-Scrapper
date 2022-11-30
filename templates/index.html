@@ -13,9 +13,9 @@
     <img src="/static/logo.gif"><br>
     <a href="/api">Api (for devs)</a>
 
-    <form>
+    <form action="subscribed" method="post">
         <p>Enter email and select what product you want to be notified about</p>
-        email:<input type="text">
+        email:<input type="text" name="email">
         <br>
 
         <p>velcro gloves</p>
@@ -36,7 +36,9 @@
         <br>
 
         <p>Open headgear</p>
-        <select>
+        <select name="open">
+            <option disabled selected>none</option>
+
             <option>White medium</option>
             <option>White large</option>
             <option>White 2L</option>
@@ -60,7 +62,9 @@
         <br>
 
         <p>Bar headgear</p>
-        <select>
+        <select name="bar">
+            <option disabled selected>none</option>
+
             <option>White medium</option>
             <option>White large</option>
             <option>White 2L</option>
@@ -84,7 +88,9 @@
         <br>
 
         <p>Cup headgear</p>
-        <select>
+        <select name="cup">
+            <option disabled selected>none</option>
+
             <option>White medium</option>
             <option>White large</option>
             <option>White 2L</option>

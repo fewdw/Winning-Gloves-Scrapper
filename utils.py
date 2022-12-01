@@ -53,8 +53,27 @@ def get_inventory_table():
     list = []
     rows = doc.findAll("td", {"style": "width: 20%; height: 18px; text-align: center;"})
     for i in range(60):
-        if(len(rows[i].text) < 2):
+        if (len(rows[i].text) < 2):
             list.append("available")
         else:
             list.append(rows[i].text)
     return list
+
+
+def get_inventory_prices():
+    headgear_url = "https://store.winning-usa.com/headgear.html"
+    result1 = requests.get(headgear_url).text
+    doc1 = BeautifulSoup(result1, "html.parser")
+
+    cup_url = "https://store.winning-usa.com/cup-protector.html"
+    result2 = requests.get(cup_url).text
+    doc2 = BeautifulSoup(result2, "html.parser")
+
+    prices1 = doc1.findAll("span", {"class": "saleprice"})
+    prices2 = doc2.findAll("span", {"class": "saleprice"})
+
+    open_price = int(re.search(r'\d+', str(prices1[0])).group())
+    bar_price = int(re.search(r'\d+', str(prices1[1])).group())
+    cup_price = int(re.search(r'\d+', str(prices2[0])).group())
+
+    return [open_price, bar_price, cup_price]

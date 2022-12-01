@@ -1,0 +1,110 @@
+{% extends "template.html" %}
+{% block body %}
+        <a href="/"><</a><br>
+        <form action="subscribed" method="post">
+
+        <p>Enter email and select what product you want to be notified about</p>
+        email:<input type="text" name="email"><br>
+
+        <p>velcro gloves</p>
+        <select name="velcro">
+            <option disabled selected>none</option>
+            <option>8oz</option>
+            <option>10oz</option>
+            <option>12oz</option>
+            <option>14oz</option>
+            <option>16oz</option>
+        </select>
+
+        <p>lace gloves</p>
+        <select name="lace">
+            <option disabled selected>none</option>
+            <option>8oz</option>
+            <option>10oz</option>
+            <option>12oz</option>
+            <option>14oz</option>
+            <option>16oz</option>
+            <option>18oz</option>
+        </select>
+
+        <p>Open headgear</p>
+        <select name="open">
+            <option disabled selected>none</option>
+
+            <option>White medium</option>
+            <option>White large</option>
+            <option>White 2L</option>
+            <option>White 3L</option>
+
+            <option>Blue medium</option>
+            <option>Blue large</option>
+            <option>Blue 2L</option>
+            <option>Blue 3L</option>
+
+            <option>Black medium</option>
+            <option>Black large</option>
+            <option>Black 2L</option>
+            <option>Black 3L</option>
+
+            <option>Red medium</option>
+            <option>Red large</option>
+            <option>Red 2L</option>
+            <option>Red 3L</option>
+        </select>
+
+        <p>Bar headgear</p>
+        <select name="bar">
+            <option disabled selected>none</option>
+
+            <option>White medium</option>
+            <option>White large</option>
+            <option>White 2L</option>
+            <option>White 3L</option>
+
+            <option>Blue medium</option>
+            <option>Blue large</option>
+            <option>Blue 2L</option>
+            <option>Blue 3L</option>
+
+            <option>Black medium</option>
+            <option>Black large</option>
+            <option>Black 2L</option>
+            <option>Black 3L</option>
+
+            <option>Red medium</option>
+            <option>Red large</option>
+            <option>Red 2L</option>
+            <option>Red 3L</option>
+        </select>
+        <br>
+
+        <p>Cup headgear</p>
+        <select name="cup">
+            <option disabled selected>none</option>
+
+            <option>White medium</option>
+            <option>White large</option>
+            <option>White 2L</option>
+            <option>White 3L</option>
+
+            <option>Blue medium</option>
+            <option>Blue large</option>
+            <option>Blue 2L</option>
+            <option>Blue 3L</option>
+
+            <option>Black medium</option>
+            <option>Black large</option>
+            <option>Black 2L</option>
+            <option>Black 3L</option>
+
+            <option>Red medium</option>
+            <option>Red large</option>
+            <option>Red 2L</option>
+            <option>Red 3L</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit">
+    </form>
+
+{% endblock %}

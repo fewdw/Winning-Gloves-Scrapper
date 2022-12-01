@@ -200,7 +200,6 @@ def get_open_headgear():
                     "2L": open_headgear_list[15],
                     "3L": open_headgear_list[19]
                 }
-
         }
     )
 
@@ -242,7 +241,6 @@ def get_bar_headgear():
                     "2L": bar_headgear_list[35],
                     "3L": bar_headgear_list[39]
                 }
-
         }
     )
 
@@ -284,7 +282,6 @@ def get_cup():
                     "2L": cup_headgear_list[55],
                     "3L": cup_headgear_list[59]
                 }
-
         }
     )
 
@@ -313,6 +310,10 @@ def display_form():
     lace = request.form.get("lace")
     velcro = request.form.get("velcro")
 
+    # glove colors
+    lace_color = request.form.get("lacecolor")
+    velcro_color = request.form.get("velcrocolor")
+
     # get gear
     open_choice = request.form.get("open")
     bar_choice = request.form.get("bar")
@@ -328,8 +329,14 @@ def display_form():
     if lace is None and velcro is None and open_choice is None and bar_choice is None and cup_choice is None:
         return render_template("badform.html", MSG="you must select something to be notified about")
 
+    if lace is not None and lace_color is None or velcro is not None and velcro_color is None:
+        return render_template("badform.html", MSG="select glove color")
+
+    
+
+
     return render_template("subscribed.html", EMAIL=email, OPEN=open_choice, BAR=bar_choice,
-                           CUP=cup_choice, LACE=lace, VELCRO=velcro)
+                           CUP=cup_choice, LACE=lace, VELCRO=velcro, VELCROCOLOR=velcro_color, LACECOLOR=lace_color)
 
 
 if __name__ == '__main__':

@@ -1,0 +1,9 @@
+modify form separate color size
+start db
+handle form
+form validation
+add some css
+
+DB:
+sqlite3 users.db
+CREATE table users ( id int PRIMARY KEY, email nvarchar, velcro nvarchar, vcolor nvarchar, lace nvarchar, lcolor nvarchar, open nvarchar, bar nvarchar, cup nvarchar);

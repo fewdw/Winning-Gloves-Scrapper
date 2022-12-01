@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="25fba851-2ba9-4dea-a054-e196df4efc87" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/static/angry.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/badform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/glovesScraper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/glovesScraper.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form.py" beforeDir="false" afterPath="$PROJECT_DIR$/Users.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/logo.gif" beforeDir="false" afterPath="$PROJECT_DIR$/static/logo.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/api.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/api.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/subscribed.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/subscribed.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo" beforeDir="false" afterPath="$PROJECT_DIR$/todo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
-    </list>
+    <list default="true" id="25fba851-2ba9-4dea-a054-e196df4efc87" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +42,29 @@
       <recent name="C:\Users\frede\Desktop\glovesScraper\static" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.Winning-Gloves-Scrapper">
+    <configuration name="Winning-Gloves-Scrapper" type="PythonConfigurationType" factoryName="Python">
+      <module name="Winning-Gloves-Scrapper" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="glovesScraper" type="PythonConfigurationType" factoryName="Python">
       <module name="glovesScraper" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -95,6 +100,7 @@
       <workItem from="1669763602981" duration="66000" />
       <workItem from="1669842533054" duration="5710000" />
       <workItem from="1669859300613" duration="10006000" />
+      <workItem from="1669920335961" duration="94000" />
     </task>
     <servers />
   </component>
@@ -116,7 +122,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/glovesScraper$glovesScraper.coverage" NAME="glovesScraper Coverage Results" MODIFIED="1669869188870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Winning_Gloves_Scrapper$glovesScraper.coverage" NAME="glovesScraper Coverage Results" MODIFIED="1669847431323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/glovesScraper$glovesScraper.coverage" NAME="glovesScraper Coverage Results" MODIFIED="1669869188870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

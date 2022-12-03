@@ -305,19 +305,25 @@ def form():
 def display_form():
     # get email
     email = request.form.get("email")
-
     # get gloves
     lace = request.form.get("lace")
     velcro = request.form.get("velcro")
-
-    # glove colors
-    lace_color = request.form.get("lacecolor")
+    # gloves
+    velcro_ounce = request.form.get("velcroounce")
     velcro_color = request.form.get("velcrocolor")
 
-    # get gear
-    open_choice = request.form.get("open")
-    bar_choice = request.form.get("bar")
-    cup_choice = request.form.get("cup")
+    lace_ounce = request.form.get("laceounce")
+    lace_color = request.form.get("lacecolor")
+    #gear
+    open_size = request.form.get("opensize")
+    open_color = request.form.get("opencolor")
+
+    bar_size = request.form.get("barsize")
+    bar_color = request.form.get("barcolor")
+
+    bar_size = request.form.get("cupsize")
+    cup_color = request.form.get("cupcolor")
+
 
     if email == "":
         return render_template("badform.html", MSG="please enter an email")
@@ -326,17 +332,13 @@ def display_form():
     if not re.fullmatch(regex, email):
         return render_template("badform.html", MSG="please enter a valid email")
 
-    if lace is None and velcro is None and open_choice is None and bar_choice is None and cup_choice is None:
-        return render_template("badform.html", MSG="you must select something to be notified about")
+    # form validation here
 
-    if lace is not None and lace_color is None or velcro is not None and velcro_color is None:
-        return render_template("badform.html", MSG="select glove color")
 
     
 
 
-    return render_template("subscribed.html", EMAIL=email, OPEN=open_choice, BAR=bar_choice,
-                           CUP=cup_choice, LACE=lace, VELCRO=velcro, VELCROCOLOR=velcro_color, LACECOLOR=lace_color)
+    return render_template("subscribed.html",)
 
 
 if __name__ == '__main__':

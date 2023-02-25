@@ -1,19 +1,47 @@
-{% extends "template.html" %}
-{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>winning notifier</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
-    <dl>
-        <dt>What is this website?</dt>
-        <dd>Hello! I wanted to buy winning gear but noticed their most popular
-            items are always out of stock, so I built a website that can send you
-            emails when their most popular items are back in stock.</dd>
-        <dt>Where can I sign up?</dt>
-        <dd>Navigate to the get notified section bellow where you can fill a form
-            and choose what to be notified about.</dd>
-        <dt>For Devs</dt>
-        <dd>If you are a dev and want to use my api you can do so bellow.</dd>
-    </dl>
+    <!--BOOTSTRAP4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-    <a href="/form">Get Notified</a><br>
-    <a href="/api">Use my API (for devs)</a>
+</head>
+<body>
 
-{% endblock %}
+  
+    <div class="container mt-3">
+        <h3>What is this website?</h3>
+        <p>Have you ever tried to buy winning gear only to find that their most popular items are always out of stock? I have a solution for you. My website will send you email notifications when the most popular items are back in stock.</p>
+        <h3>Sign Up</h3>
+        <form>
+            <div class="form-row align-items-center">
+              <div class="col-auto">
+                <label for="email" class="sr-only">Email</label>
+                <input type="email" class="form-control mb-2" id="email" placeholder="Enter email" required>
+              </div>
+              <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-2">Submit</button>
+              </div>
+            </div>
+          </form>
+
+      <h4>Use my API</h4>
+      <ul class="list-group">
+        <li class="list-group-item"><a id="lacelink" href="/gloves/laces">Laces Gloves</a></li>
+        <li class="list-group-item"><a id="velcrolink" href="/gloves/velcro">Velcro Gloves</a></li>
+        <li class="list-group-item"><a id="openlink" href="/headgear/open">Headgear Open</a></li>
+        <li class="list-group-item"><a id="barlink" href="/headgear/bar">Headgear Bar</a></li>
+        <li class="list-group-item"><a id="cuplink" href="/cup">Cup</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

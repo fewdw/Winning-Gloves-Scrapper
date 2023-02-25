@@ -291,55 +291,6 @@ def index():
     return render_template("index.html")
 
 
-@app.route('/api')
-def api():
-    return render_template("api.html")
-
-
-@app.route('/form')
-def form():
-    return render_template("form.html")
-
-
-@app.route('/subscribed', methods=['POST'])
-def display_form():
-    # get email
-    email = request.form.get("email")
-    # get gloves
-    lace = request.form.get("lace")
-    velcro = request.form.get("velcro")
-    # gloves
-    velcro_ounce = request.form.get("velcroounce")
-    velcro_color = request.form.get("velcrocolor")
-
-    lace_ounce = request.form.get("laceounce")
-    lace_color = request.form.get("lacecolor")
-    #gear
-    open_size = request.form.get("opensize")
-    open_color = request.form.get("opencolor")
-
-    bar_size = request.form.get("barsize")
-    bar_color = request.form.get("barcolor")
-
-    bar_size = request.form.get("cupsize")
-    cup_color = request.form.get("cupcolor")
-
-
-    if email == "":
-        return render_template("badform.html", MSG="please enter an email")
-
-    regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
-    if not re.fullmatch(regex, email):
-        return render_template("badform.html", MSG="please enter a valid email")
-
-    # form validation here
-
-
-    
-
-
-    return render_template("subscribed.html",)
-
 
 if __name__ == '__main__':
     app.run()

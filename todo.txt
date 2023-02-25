@@ -1,4 +1,0 @@
-FORM VALIDATION
-start db
-handle form
-add some css

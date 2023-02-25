@@ -4,7 +4,6 @@ import requests
 from bs4 import BeautifulSoup
 from flask import Flask, render_template, jsonify, request
 
-import utils
 from utils import get_gloves_list, get_glove_prices_laces, get_glove_prices_velcro, get_inventory_table, \
     get_inventory_prices
 

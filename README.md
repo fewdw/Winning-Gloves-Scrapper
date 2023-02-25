@@ -6,22 +6,22 @@ You can either subscribe to receive emails or use my api
 
 ## API Documentation
 
-### /gloves/laces
+### Lace Gloves
 #### Request
 #### Response
 
-### /gloves/velcro
+### Velcro Gloves
 #### Request
 #### Response
 
-### /headgear/open
+### Open Headgear
 #### Request
 #### Response
 
-### /headgear/bar
+### Bar Headgear
 #### Request
 #### Response
 
-### /cup
+### Cup
 #### Request
 #### Response
